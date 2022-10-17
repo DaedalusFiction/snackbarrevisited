@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 import {
     collection,
     getDocs,
@@ -15,39 +15,41 @@ import { db } from "../../firebase";
 const index = ({ currentEvents, pastEvents }) => {
     return (
         <PageLayout name="Shows">
-            <Grid
-                container
-                className="section"
-                spacing={4}
-                sx={{ position: "relative" }}
-            >
-                <Grid item xs={12} md={3}>
-                    <Typography
-                        className="sticky"
-                        variant="h2"
-                        component="body1"
-                        sx={{ marginBottom: ".5em" }}
-                    >
-                        Upcoming:
-                    </Typography>
+            <Container maxWidth="lg">
+                <Grid
+                    container
+                    className="section"
+                    spacing={4}
+                    sx={{ position: "relative" }}
+                >
+                    <Grid item xs={12} md={5}>
+                        <Typography
+                            className="sticky"
+                            variant="h2"
+                            component="body1"
+                            sx={{ marginBottom: ".5em" }}
+                        >
+                            Upcoming:
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={12} md={7}>
+                        <EventsItems events={currentEvents} />
+                    </Grid>
+                    <Grid item xs={12} md={5}>
+                        <Typography
+                            className="sticky"
+                            variant="h2"
+                            component="body1"
+                            sx={{ marginBottom: ".5em" }}
+                        >
+                            Past:
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={12} md={7}>
+                        <EventsItems events={pastEvents} />
+                    </Grid>
                 </Grid>
-                <Grid item xs={12} md={9}>
-                    <EventsItems events={currentEvents} />
-                </Grid>
-                <Grid item xs={12} md={3}>
-                    <Typography
-                        className="sticky"
-                        variant="h2"
-                        component="body1"
-                        sx={{ marginBottom: ".5em" }}
-                    >
-                        Past:
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} md={9}>
-                    <EventsItems events={pastEvents} />
-                </Grid>
-            </Grid>
+            </Container>
         </PageLayout>
     );
 };

@@ -21,7 +21,7 @@ const EventItem = ({ fields, isPreview }) => {
     const website = fields[6].value;
 
     return (
-        <Container maxWidth="lg">
+        <Container>
             <Box
                 sx={{
                     display: "flex",
@@ -29,62 +29,59 @@ const EventItem = ({ fields, isPreview }) => {
                     gap: "2rem",
                 }}
             >
-                <Grid container spacing={8}>
-                    <Grid item xs={12} sm={7}>
-                        <Box
+                <Box
+                    sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-between",
+                        height: "100%",
+                    }}
+                >
+                    <Box>
+                        <Typography variant="h2">{title}</Typography>
+                        <Typography variant="h4">
+                            {`${formatHtmlDate(start)}`}
+                            {end && ` - ${formatHtmlDate(end)}`}
+                        </Typography>
+                        {
+                            <Typography variant="h5">{`${venue}${
+                                time && ","
+                            } ${time}`}</Typography>
+                        }
+                        <br />
+                        <Typography
                             sx={{
-                                display: "flex",
-                                flexDirection: "column",
-                                justifyContent: "space-between",
-                                height: "100%",
+                                color: theme.palette.custom.darkM,
                             }}
                         >
-                            <Box>
-                                <Typography variant="h2">{title}</Typography>
-                                <Typography variant="h4">
-                                    {`${formatHtmlDate(start)}`}
-                                    {end && ` - ${formatHtmlDate(end)}`}
-                                </Typography>
-                                {
-                                    <Typography variant="h5">{`${venue}${
-                                        time && ","
-                                    } ${time}`}</Typography>
-                                }
-                                <br />
-                                <Typography
-                                    sx={{
-                                        color: theme.palette.custom.darkM,
-                                    }}
-                                >
-                                    {description}
-                                </Typography>
-                                <br />
-                            </Box>
-                            <Box sx={{ display: "flex", gap: "1em" }}>
-                                <Button
-                                    variant="contained"
-                                    color="secondary"
-                                    href={website}
-                                    size="large"
-                                    endIcon={<ArrowRightAlt />}
-                                >
-                                    more details
-                                </Button>
-                                {isPreview && (
-                                    <Button
-                                        variant="contained"
-                                        color="secondary"
-                                        href="/events"
-                                        size="large"
-                                        endIcon={<ArrowRightAlt />}
-                                    >
-                                        all events
-                                    </Button>
-                                )}
-                            </Box>
-                        </Box>
-                    </Grid>
-                </Grid>
+                            {description}
+                        </Typography>
+                        <br />
+                    </Box>
+                    <Box sx={{ display: "flex", gap: "1em" }}>
+                        <Button
+                            variant="contained"
+                            color="secondary"
+                            href={website}
+                            size="large"
+                            endIcon={<ArrowRightAlt />}
+                        >
+                            details
+                        </Button>
+                        {isPreview && (
+                            <Button
+                                variant="contained"
+                                color="secondary"
+                                href="/events"
+                                size="large"
+                                endIcon={<ArrowRightAlt />}
+                            >
+                                all events
+                            </Button>
+                        )}
+                    </Box>
+                </Box>
+
                 {!isPreview && (
                     <Box sx={{ opacity: "70%", marginBottom: "1rem" }}>
                         <Image

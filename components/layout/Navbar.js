@@ -23,7 +23,7 @@ const Navbar = () => {
     const currentPage = router.pathname.split("/")[1];
     const path = router.pathname.split("/");
 
-    const [trigger, setTrigger] = useState(true);
+    const [trigger, setTrigger] = useState(false);
 
     useEffect(() => {
         const threshold = 30;
@@ -74,7 +74,7 @@ const Navbar = () => {
     return (
         <Slide
             direction="down"
-            in={true}
+            in={trigger}
             sx={{
                 position: "fixed",
                 top: "0",
@@ -87,7 +87,10 @@ const Navbar = () => {
                 color="secondary"
                 onMouseLeave={handleMouseLeave}
             >
-                <Container sx={{ padding: ".5rem 0" }} maxWidth="xl">
+                <Container
+                    sx={{ paddingTop: ".75rem", paddingBottom: ".75rem" }}
+                    maxWidth="xl"
+                >
                     <Grid container>
                         <Grid item xs={3}>
                             <Box
@@ -102,7 +105,7 @@ const Navbar = () => {
                                     aria-controls="menu-appbar"
                                     aria-haspopup="true"
                                     onClick={handleOpenNavMenu}
-                                    color="inherit"
+                                    sx={{ color: "white" }}
                                 >
                                     <MenuIcon />
                                 </IconButton>
@@ -144,12 +147,12 @@ const Navbar = () => {
                                 </Menu>
                             </Box>
                         </Grid>
-                        <Grid item xs>
+                        <Grid item xs={9}>
                             <Box
                                 sx={{
                                     display: "flex",
                                     alignItems: "center",
-                                    justifyContent: "center",
+                                    justifyContent: "end",
                                     height: "100%",
                                     width: "100%",
                                 }}
@@ -164,7 +167,6 @@ const Navbar = () => {
                                         display: { xs: "flex", xl: "none" },
                                         fontSize: "1.75rem",
                                         textAlign: "center",
-                                        width: "100%",
                                         fontWeight: 700,
                                         transition: "1000ms",
                                         color: theme.palette.custom.light,
@@ -205,13 +207,13 @@ const Navbar = () => {
                                         sx={{
                                             margin: "0",
                                             transition: "300ms",
-                                            fontSize: titleFontSize,
+                                            // fontSize: titleFontSize,
                                             textAlign: "center",
                                             color:
                                                 currentPage === ""
                                                     ? theme.palette.primary.main
                                                     : theme.palette.custom
-                                                          .lightMuted,
+                                                          .light,
                                             "&:hover": {
                                                 color: theme.palette.primary
                                                     .main,
@@ -246,7 +248,7 @@ const Navbar = () => {
                                                         ? theme.palette.primary
                                                               .main
                                                         : theme.palette.custom
-                                                              .lightMuted,
+                                                              .light,
                                                     "&:hover": {
                                                         color: theme.palette
                                                             .primary.main,
@@ -308,7 +310,7 @@ const Navbar = () => {
                                                                                     color: theme
                                                                                         .palette
                                                                                         .custom
-                                                                                        .lightMuted,
+                                                                                        .light,
                                                                                     "&:hover":
                                                                                         {
                                                                                             color: theme

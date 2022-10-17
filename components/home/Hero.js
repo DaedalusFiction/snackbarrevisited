@@ -10,7 +10,6 @@ import SocialMediaIcons from "../general/SocialMediaIcons";
 const Hero = () => {
     return (
         <Box
-            className="section"
             sx={{
                 backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${heroContent.image.url})`,
                 backgroundSize: "cover",
@@ -19,7 +18,7 @@ const Hero = () => {
         >
             <Box
                 sx={{
-                    padding: "5vh 0 5vh 0",
+                    padding: "10vh 0",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",

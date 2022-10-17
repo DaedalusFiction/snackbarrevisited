@@ -236,16 +236,16 @@ const mosaicSectionContentThree = {
 };
 const musicPreviewContent = {
     backgroundColor: "white",
-    title: "Music Preview",
+    title: "Basement Grunge Pop",
     songs: [
         { url: "/songs/muskrat-ramble.mp3", name: "Muskrat Ramble" },
         { url: "/songs/muskrat-ramble.mp3", name: "Muskrat Ramble" },
         { url: "/songs/muskrat-ramble.mp3", name: "Muskrat Ramble" },
     ],
     content:
-        "This is the music preview section. Here you can have up to three song to play with a link to the music page, where the rest of your music will be.",
+        "SNACKBAR plays a selection of excellent music ranging from the 60s through to the 2000s.",
     button: {
-        text: "Listen",
+        text: "More Songs",
         href: "/music",
         variant: "contained",
     },
@@ -269,7 +269,7 @@ const blockPhotoContentOne = {
         variant: "contained",
     },
     image: {
-        url: "/images/novelists.webp",
+        url: "/images/snackbarhero.webp",
         alt: "Michael hoberman speaking with two novelists",
     },
 };
@@ -309,11 +309,11 @@ const musicContent = {
 const eventsPreviewContent = {
     image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
     bigDividerImage: {
-        url: "/images/eventsBorder.svg",
+        url: "/images/decorativeBorder2.svg",
         alt: "alt placeholder text",
     },
     dividerImage: {
-        url: "/images/divider2.svg",
+        url: "/images/eventsBorder2.svg",
         alt: "alt placeholder text",
     },
     title: "Upcoming Events",
@@ -442,13 +442,9 @@ const aboutContent = {
             href: "/book",
             variant: "contained",
         },
-        {
-            text: "contact us",
-            href: "/contact",
-            variant: "contained",
-        },
     ],
-    content: "This is the about section",
+    content:
+        "SNACK BAR plays all of the best music that cool thirty-somethings love and cherish. Whether you grew up listening to classic rock, punk, or quote-unquote alternative, SNACK BAR is sure to play something that will get your foot tapping and your lips reaching for that limited-edition craft beer. But it isn't just about the music: All of our members have neck-length or longer hair, except for Dave; and Greg, our guitarist/vocalist, has that rustic three-day-old beard you've all come to expect and associate with meaningful jams.\n\nFounded during the pandemic of '21-22, SNACK BAR is comprised of the aforementioned Greg, Emily on the bass, Dave on the muthafuckin' drums, and Emma rocking the keyboard and the tambourine, sometimes simultaneously. The best part? SNACK BAR also accepts requests, though please be aware that at this time we are limited to only songs we already know, most of which appear in the set list already--but we're happy to play them again!",
 };
 
 const leadProfile = {

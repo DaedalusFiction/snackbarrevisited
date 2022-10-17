@@ -23,7 +23,7 @@ const BlockPhoto = ({ blockPhotoContent, reverse }) => {
                             justifyContent: "center",
                             alignItems: "center",
                             height: "100%",
-                            padding: "4rem 0",
+                            padding: "2rem 0",
                         }}
                     >
                         <Box>

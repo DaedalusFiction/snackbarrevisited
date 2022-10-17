@@ -6,6 +6,7 @@ import Mosaic from "../mosaic/Mosaic";
 import ReactAudioPlayer from "react-audio-player";
 import DecorativeHeader from "../general/DecorativeHeader";
 import { eventsPreviewContent } from "../../siteInfo";
+import { ArrowRightAlt } from "@mui/icons-material";
 
 const MusicPreview = ({ musicPreviewContent, reverse, variation }) => {
     return (
@@ -20,7 +21,7 @@ const MusicPreview = ({ musicPreviewContent, reverse, variation }) => {
                 />
                 <Grid
                     container
-                    spacing={6}
+                    spacing={10}
                     wrap={reverse ? "wrap-reverse" : "wrap"}
                 >
                     <Grid item xs={12} lg={4} order={reverse ? "1" : "0"}>
@@ -55,7 +56,7 @@ const MusicPreview = ({ musicPreviewContent, reverse, variation }) => {
                                 >
                                     {musicPreviewContent.title}
                                 </Typography>
-                                <br />
+                                {/* <br />
                                 <Typography
                                     sx={{
                                         textAlign: {
@@ -65,7 +66,7 @@ const MusicPreview = ({ musicPreviewContent, reverse, variation }) => {
                                     }}
                                 >
                                     {musicPreviewContent.content}
-                                </Typography>
+                                </Typography> */}
                                 <br />
                                 {musicPreviewContent.songs.map(
                                     (song, index) => {
@@ -92,18 +93,6 @@ const MusicPreview = ({ musicPreviewContent, reverse, variation }) => {
                                     }
                                 )}
                                 <br />
-                                <Link href={musicPreviewContent.button.href}>
-                                    <Button
-                                        size="large"
-                                        color="secondary"
-                                        sx={{ width: "fit-content" }}
-                                        variant={
-                                            musicPreviewContent.button.variant
-                                        }
-                                    >
-                                        {musicPreviewContent.button.text}
-                                    </Button>
-                                </Link>
                             </Box>
                         </Box>
                     </Grid>
@@ -122,6 +111,25 @@ const MusicPreview = ({ musicPreviewContent, reverse, variation }) => {
                         </Box>
                     </Grid>
                 </Grid>
+                <Box
+                    sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        marginTop: "3rem",
+                    }}
+                >
+                    <Link href={musicPreviewContent.button.href}>
+                        <Button
+                            size="large"
+                            color="secondary"
+                            sx={{ width: "fit-content" }}
+                            variant={musicPreviewContent.button.variant}
+                            endIcon={<ArrowRightAlt />}
+                        >
+                            {musicPreviewContent.button.text}
+                        </Button>
+                    </Link>
+                </Box>
             </Container>
         </Box>
     );

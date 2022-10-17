@@ -17,7 +17,7 @@ const PageLayout = ({ name, children }) => {
                             display: "flex",
                             justifyContent: "center",
                             // marginBottom: "2rem",
-                            transform: "scaleY(-1)",
+                            // transform: "scaleY(-1)",
                         }}
                     >
                         <NativeImage
@@ -37,7 +37,7 @@ const PageLayout = ({ name, children }) => {
                             display: "flex",
                             justifyContent: "center",
                             // marginBottom: "4rem",
-                            // transform: "scaleY(-1)",
+                            transform: "scaleY(-1)",
                         }}
                     >
                         <NativeImage

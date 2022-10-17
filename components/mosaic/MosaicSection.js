@@ -13,7 +13,7 @@ const MosaicSection = ({ mosaicSectionContent, reverse, variation }) => {
             <Container maxWidth="xl">
                 <Grid
                     container
-                    spacing={6}
+                    spacing={10}
                     wrap={reverse ? "wrap-reverse" : "wrap"}
                 >
                     <Grid item xs={12} lg={4} order={reverse ? "1" : "0"}>

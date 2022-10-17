@@ -26,16 +26,16 @@ const AboutPreview = () => {
                             }}
                         >
                             <Typography>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Assumenda, fugiat ipsam. A
-                                pariatur accusamus exercitationem error
-                                explicabo delectus, nesciunt fugit.
+                                SNACKBAR was formed in 2021 by guitarist and
+                                lead singer Greg Ochsenschlager, bassist Emily
+                                Patterson, drummer Dave Sorensen, and
+                                keyboardist Emma Bramer.
                             </Typography>
                             <Typography>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Assumenda, fugiat ipsam. A
-                                pariatur accusamus exercitationem error
-                                explicabo delectus, nesciunt fugit.
+                                Playing a selection of covers ranging from The
+                                Ramones to The Dandy Warhols, SNACKBAR is
+                                guaranteed to liven any scene with their far-out
+                                sound and take-no-shit worldview.
                             </Typography>
                             <Box
                                 sx={{

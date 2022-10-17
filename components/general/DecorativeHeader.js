@@ -10,10 +10,10 @@ const DecorativeHeader = ({ image, text }) => {
                     display: "flex",
                     justifyContent: "center",
                     // marginBottom: "2rem",
-                    transform: "scaleY(-1)",
+                    // transform: "scaleY(-1)",
                 }}
             >
-                <NativeImage image={image} maxSize={350} />
+                <NativeImage image={image} maxSize={300} />
             </Box>
             <Typography
                 variant="h2"
@@ -27,10 +27,10 @@ const DecorativeHeader = ({ image, text }) => {
                     display: "flex",
                     justifyContent: "center",
                     marginBottom: "4rem",
-                    // transform: "scaleY(-1)",
+                    transform: "scaleY(-1)",
                 }}
             >
-                <NativeImage image={image} maxSize={350} />
+                <NativeImage image={image} maxSize={300} />
             </Box>
         </Box>
     );
