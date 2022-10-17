@@ -1,8 +1,5 @@
-import { Grid, Typography } from "@mui/material";
 import React from "react";
 import PageLayout from "../../components/layout/PageLayout";
-import { galleryCategories, galleryStylesCategories } from "../../siteInfo";
-import GalleryCategoryPreview from "../../components/gallery/GalleryCategoryPreview";
 import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import Gallery from "../../components/gallery/Gallery";
 import { db } from "../../firebase";

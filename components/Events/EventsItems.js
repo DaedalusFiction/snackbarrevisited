@@ -1,7 +1,5 @@
-import { Grid, Typography } from "@mui/material";
-import { Box, Container } from "@mui/system";
+import { Container } from "@mui/system";
 import React from "react";
-import useGetEvents from "../../hooks/useGetEvents";
 import EventItem from "./EventItem";
 
 const EventsItems = ({ events }) => {

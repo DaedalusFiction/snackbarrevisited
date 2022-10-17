@@ -1,10 +1,5 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
-import { Container } from "@mui/system";
-import Link from "next/link";
-import lightTheme from "../../styles/themes/theme";
-import { pages, siteName, heroContent } from "../../siteInfo";
-import NativeImage from "../general/NativeImage.js";
-import theme from "../../styles/themes/theme";
+import { Box, Typography } from "@mui/material";
+import { heroContent } from "../../siteInfo";
 import SocialMediaIcons from "../general/SocialMediaIcons";
 
 const Hero = () => {

@@ -1,13 +1,9 @@
-import { Button, Container, Divider, Grid, Typography } from "@mui/material";
+import { Button, Container, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import NativeImage from "../general/NativeImage";
 import theme from "../../styles/themes/theme";
 import { ArrowRightAlt } from "@mui/icons-material";
-import GalleryImage from "../general/NativeImage";
 import Image from "next/image";
-import EventImage from "./EventImage";
-import { formatDate } from "../../utility/general.js";
 import { eventsPreviewContent } from "../../siteInfo";
 import { formatHtmlDate } from "../../utility/general.js";
 

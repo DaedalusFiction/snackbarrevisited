@@ -1,9 +1,7 @@
 import { Box, Button, Grid, Link, Typography } from "@mui/material";
-import { Container } from "@mui/system";
 import SizedImage from "../../components/general/SizedImage";
-import { aboutContent, pages, secondaryProfiles } from "../../siteInfo";
+import { aboutContent } from "../../siteInfo";
 import PageLayout from "../../components/layout/PageLayout";
-import AboutNavbar from "../../components/about/AboutNavbar";
 
 const index = () => {
     return (

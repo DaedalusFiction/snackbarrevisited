@@ -1,7 +1,5 @@
-import { Box } from "@mui/system";
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 const GalleryImage = ({ image, maxSize, url, alt, blur }) => {
     const [ratio, setRatio] = useState(1 / 1); // default to 16:9

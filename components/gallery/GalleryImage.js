@@ -1,9 +1,7 @@
 import { Box } from "@mui/system";
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { Typography } from "@mui/material";
-import { ArrowForward, Download } from "@mui/icons-material";
+import { ArrowForward } from "@mui/icons-material";
 
 const GalleryImage = ({ image, category, subCategory }) => {
     const [ratio, setRatio] = useState(1 / 1); // default to 16:9
