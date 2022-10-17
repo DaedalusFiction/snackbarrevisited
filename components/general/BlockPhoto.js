@@ -41,6 +41,7 @@ const BlockPhoto = ({ blockPhotoContent, reverse }) => {
                                             blockPhotoContent.button.variant
                                         }
                                         size="large"
+                                        color="secondary"
                                     >
                                         {blockPhotoContent.button.text}
                                     </Button>

@@ -4,21 +4,17 @@ let theme = createTheme({
     palette: {
         mode: "light",
         primary: {
-            // main: "#3B3B58",
-            main: "#484041",
-            // off: "#04A777",
+            // main: "#484041",
+            main: "#ffc700",
             off: "#FBFFF1",
         },
         secondary: {
-            main: "#CBEAA6",
-            // main: "#04A777",
-            // main: "#DC965A",
+            main: "#fe1d1d",
         },
         background: {
-            // default: "#fefefe",
-            // default: "#FFEECF",
             default: "#FBFBF2",
-            accent: "#ffeccd",
+            accent: "#ffc700",
+            // accent: "#ffeccd",
             dark: "#ffeccd",
         },
         custom: {
@@ -47,12 +43,12 @@ theme = createTheme(theme, {
     typography: {
         h1: {
             // fontFamily: "Raleway",
-            fontFamily: "Playfair Display",
-            color: theme.palette.custom.primary,
+            fontFamily: "Fredoka",
+            color: theme.palette.primary.main,
             // color: theme.palette.primary.off,
-            fontWeight: "400",
+            fontWeight: "600",
             lineHeight: ".85em",
-            fontSize: "clamp(3.5rem, 8vw, 9rem)",
+            fontSize: "clamp(4.5rem, 30vw, 30rem)",
             letterSpacing: ".025em",
         },
         h2: {

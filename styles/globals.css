@@ -8,6 +8,7 @@ body {
 
 :root {
     --bg-success: rgb(255, 236, 205);
+    --bg-succe: #fe1d1d;
     --bg-sucess: #6c5ddd;
 }
 

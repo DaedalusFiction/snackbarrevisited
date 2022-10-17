@@ -13,9 +13,7 @@ import theme from "../../styles/themes/theme";
 import { useEffect, useState } from "react";
 import { navigateToTop } from "../../utility/navigateToTop";
 import { pages, siteName, navbar } from "../../siteInfo";
-import SocialMediaIcons from "../general/SocialMediaIcons";
 import { useRouter } from "next/router";
-import NativeImage from "../../components/general/NativeImage";
 
 const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = useState(null);
@@ -84,7 +82,11 @@ const Navbar = () => {
                 display: { xs: "inherit", xl: "flex" },
             }}
         >
-            <AppBar position="static" onMouseLeave={handleMouseLeave}>
+            <AppBar
+                position="static"
+                color="secondary"
+                onMouseLeave={handleMouseLeave}
+            >
                 <Container sx={{ padding: ".5rem 0" }} maxWidth="xl">
                     <Grid container>
                         <Grid item xs={3}>
@@ -207,12 +209,12 @@ const Navbar = () => {
                                             textAlign: "center",
                                             color:
                                                 currentPage === ""
-                                                    ? theme.palette.custom.light
+                                                    ? theme.palette.primary.main
                                                     : theme.palette.custom
                                                           .lightMuted,
                                             "&:hover": {
-                                                color: theme.palette.custom
-                                                    .light,
+                                                color: theme.palette.primary
+                                                    .main,
                                             },
                                         }}
                                     >
@@ -241,13 +243,13 @@ const Navbar = () => {
                                                             .split(" ")
                                                             .join("")
                                                     )
-                                                        ? theme.palette.custom
-                                                              .light
+                                                        ? theme.palette.primary
+                                                              .main
                                                         : theme.palette.custom
                                                               .lightMuted,
                                                     "&:hover": {
                                                         color: theme.palette
-                                                            .custom.light,
+                                                            .primary.main,
                                                     },
                                                 }}
                                             >
@@ -258,7 +260,6 @@ const Navbar = () => {
                                     {/* <SocialMediaIcons /> */}
                                     <Link href={navbar.buttonOne.href}>
                                         <Button
-                                            color="secondary"
                                             variant={navbar.buttonOne.variant}
                                         >
                                             {navbar.buttonOne.text}

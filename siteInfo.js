@@ -14,7 +14,7 @@ import lightTheme from "./styles/themes/theme";
 
 // 1. Meta
 
-const siteName = "MUSICIAN";
+const siteName = "SNACKBAR";
 // const siteName = "Cosima Hewes";
 
 // 2. Layout
@@ -37,7 +37,10 @@ const header = {
 // 3. Home
 
 const heroContent = {
-    image: { url: "/images/hero.webp", alt: "alt hero text" },
+    image: {
+        url: "/images/snackbarhero.webp",
+        alt: "Greg and Emily rocking out",
+    },
     title: "YOUR NAME",
     highlights: [
         "This is the first highlight.",
