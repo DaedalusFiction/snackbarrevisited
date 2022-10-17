@@ -33,7 +33,9 @@ const index = ({ currentEvents, pastEvents }) => {
                         </Typography>
                     </Grid>
                     <Grid item xs={12} md={7}>
-                        <EventsItems events={currentEvents} />
+                        {currentEvents && (
+                            <EventsItems events={currentEvents} />
+                        )}
                     </Grid>
                     <Grid item xs={12} md={5}>
                         <Typography
@@ -46,7 +48,7 @@ const index = ({ currentEvents, pastEvents }) => {
                         </Typography>
                     </Grid>
                     <Grid item xs={12} md={7}>
-                        <EventsItems events={pastEvents} />
+                        {pastEvents && <EventsItems events={pastEvents} />}
                     </Grid>
                 </Grid>
             </Container>

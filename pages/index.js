@@ -22,16 +22,16 @@ export default function Home({ events }) {
     return (
         <Box>
             <Meta />
-            {/* <Hero />
+            <Hero />
             <Container maxWidth="xl" disableGutters>
                 <MusicPreview
                     musicPreviewContent={musicPreviewContent}
                     variation={1}
                 />
-                <EventsPreview events={events} />
+                {events && <EventsPreview events={events} />}
                 <AboutPreview />
                 <BlockPhoto blockPhotoContent={blockPhotoContentOne} />
-            </Container> */}
+            </Container>
         </Box>
     );
 }

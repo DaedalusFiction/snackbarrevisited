@@ -7,7 +7,7 @@ import { db } from "../../firebase";
 const Projects = ({ images }) => {
     return (
         <PageLayout name="GALLERY">
-            <Gallery images={images} category="gallery" />
+            {images && <Gallery images={images} category="gallery" />}
         </PageLayout>
     );
 };
