@@ -1,10 +1,8 @@
-import { Container, Grid, Typography } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import useGetEvents from "../../hooks/useGetEvents";
 import theme from "../../styles/themes/theme";
 import Event from "../Events/Event";
-import EventItem from "../Events/EventItem";
 import NativeImage from "../../components/general/NativeImage";
 import { eventsPreviewContent } from "../../siteInfo";
 import DecorativeHeader from "../general/DecorativeHeader";
