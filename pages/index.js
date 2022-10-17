@@ -1,11 +1,8 @@
-import { Box, Divider, Typography } from "@mui/material";
-import { Grid } from "@mui/material";
+import { Box } from "@mui/material";
 import { Container } from "@mui/system";
 
 import Meta from "../components/home/Meta";
 import Hero from "../components/home/Hero";
-import theme from "../styles/themes/theme";
-import Showcase from "../components/home/Showcase";
 import { blockPhotoContentOne, musicPreviewContent } from "../siteInfo";
 import AboutPreview from "../components/home/AboutPreview";
 import {
@@ -14,7 +11,6 @@ import {
     limit,
     orderBy,
     query,
-    startAfter,
     where,
 } from "firebase/firestore";
 import { db } from "../firebase";
@@ -26,7 +22,7 @@ export default function Home({ events }) {
     return (
         <Box>
             <Meta />
-            <Hero />
+            {/* <Hero />
             <Container maxWidth="xl" disableGutters>
                 <MusicPreview
                     musicPreviewContent={musicPreviewContent}
@@ -35,7 +31,7 @@ export default function Home({ events }) {
                 <EventsPreview events={events} />
                 <AboutPreview />
                 <BlockPhoto blockPhotoContent={blockPhotoContentOne} />
-            </Container>
+            </Container> */}
         </Box>
     );
 }
