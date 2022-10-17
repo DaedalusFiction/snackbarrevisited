@@ -1,12 +1,9 @@
-import { Button, Grid, Input, TextField, Typography } from "@mui/material";
+import { TextField, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import { addDoc, collection, doc, getDoc, setDoc } from "firebase/firestore";
-import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
-import Image from "next/image";
+import { addDoc, collection } from "firebase/firestore";
 import React from "react";
-import { useRef } from "react";
 import { useState } from "react";
-import { db, storage } from "../../firebase";
+import { db } from "../../firebase";
 import ButtonWithConfirm from "../general/ButtonWithConfirm";
 
 const FirebaseUploadForm = ({

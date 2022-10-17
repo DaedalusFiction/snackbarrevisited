@@ -2,7 +2,6 @@ import { Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
 import Meta from "../home/Meta";
-import Header from "./Header";
 import NativeImage from "../../components/general/NativeImage";
 import { eventsPreviewContent } from "../../siteInfo";
 const PageLayout = ({ name, children }) => {
