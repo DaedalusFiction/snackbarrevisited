@@ -63,13 +63,13 @@ export const getServerSideProps = async (context) => {
         eventsRef,
         orderBy("startDate", "asc"),
         where("startDate", ">=", today),
-        limit(3)
+        limit(20)
     );
     const q2 = query(
         eventsRef,
         orderBy("startDate", "asc"),
         where("startDate", "<", today),
-        limit(3)
+        limit(20)
     );
 
     const currentEventsQuery = await getDocs(q1);
