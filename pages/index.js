@@ -37,13 +37,13 @@ export default function Home({ events }) {
 }
 
 export const getServerSideProps = async (context) => {
-    // const today = new Date().toJSON().slice(0, 10);
+    const today = new Date().toJSON().slice(0, 10);
 
     const eventsRef = collection(db, "events");
     const q1 = query(
         eventsRef,
         orderBy("startDate", "asc"),
-        // where("startDate", ">=", today),
+        where("startDate", ">=", today),
         limit(3)
     );
 

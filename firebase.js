@@ -10,7 +10,7 @@ const firebaseConfig = {
     projectId: "template-musician",
     storageBucket: "template-musician.appspot.com",
     messagingSenderId: "458245193277",
-    appId: "1:458245193277:web:1140f9e2fb81b151cb3454",
+    appId: "1:458245193277:web:8ce3f4872bb48269cb3454",
 };
 
 // provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
