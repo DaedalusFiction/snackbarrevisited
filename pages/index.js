@@ -36,26 +36,26 @@ export default function Home({ events }) {
     );
 }
 
-export const getServerSideProps = async (context) => {
-    const today = new Date().toJSON().slice(0, 10);
+// export const getServerSideProps = async (context) => {
+//     const today = new Date().toJSON().slice(0, 10);
 
-    const eventsRef = collection(db, "events");
-    const q1 = query(
-        eventsRef,
-        orderBy("startDate", "asc"),
-        where("startDate", ">=", today),
-        limit(3)
-    );
+//     const eventsRef = collection(db, "events");
+//     const q1 = query(
+//         eventsRef,
+//         orderBy("startDate", "asc"),
+//         where("startDate", ">=", today),
+//         limit(3)
+//     );
 
-    const queriedDocuments = await getDocs(q1);
-    let events = [];
-    queriedDocuments.docs.forEach((doc, index) => {
-        events = [...events, doc.data()];
-    });
+//     const queriedDocuments = await getDocs(q1);
+//     let events = [];
+//     queriedDocuments.docs.forEach((doc, index) => {
+//         events = [...events, doc.data()];
+//     });
 
-    return {
-        props: {
-            events,
-        },
-    };
-};
+//     return {
+//         props: {
+//             events,
+//         },
+//     };
+// };
