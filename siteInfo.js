@@ -265,7 +265,7 @@ const blockPhotoContentOne = {
     content: "Book Us Today!",
     button: {
         text: "Book Us!",
-        href: "/book",
+        href: "/contact",
         variant: "contained",
     },
     image: {
@@ -439,7 +439,7 @@ const aboutContent = {
     buttons: [
         {
             text: "Book us!",
-            href: "/book",
+            href: "/contact",
             variant: "contained",
         },
     ],
