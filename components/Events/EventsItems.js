@@ -7,7 +7,9 @@ const EventsItems = ({ events }) => {
         <Container maxWidth="lg">
             {events &&
                 events.map((event, index) => {
-                    return <EventItem key={index} fields={event.fields} />;
+                    return (
+                        <EventItem key={index} fields={event.data().fields} />
+                    );
                 })}
         </Container>
     );
