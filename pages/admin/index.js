@@ -7,6 +7,7 @@ import { db } from "../../firebase.js";
 import FirebaseUploadForm from "../../components/admin/FirebaseUploadForm.js";
 import FirebaseUploadEvent from "../../components/admin/FirebaseUploadEvent.js";
 import FirestoreListing from "../../components/admin/FirestoreListing.js";
+import FirestoreEventsListing from "../../components/admin/FirestoreEventsListing.js";
 import { eventConfig, galleryConfig } from "../../siteInfo";
 import PageLayout from "../../components/layout/PageLayout.js";
 
@@ -68,7 +69,7 @@ const Admin = () => {
                                     />
                                 </Grid>
                                 <Grid item xs={12} md={6}>
-                                    <FirestoreListing
+                                    <FirestoreEventsListing
                                         // category={galleryConfig.category}
                                         config={eventConfig}
                                         folder="events"

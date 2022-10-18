@@ -1,23 +1,31 @@
 import { Box, Input, Typography } from "@mui/material";
 import React, { useState } from "react";
-import useGetImages from "../../hooks/useGetImages";
-import FirestoreListingItem from "./FirestoreListingItem";
+import useGetEvents from "../../hooks/useGetEvents";
+import FirestoreEventsListingItem from "./FirestoreEventsListingItem";
 
 const FirestoreListing = ({ folder, updateCounter, setUpdateCounter }) => {
-    const [images] = useGetImages(updateCounter, folder);
-    const [shownImages, setShownImages] = useState([]);
+    const [currentEvents, pastEvents] = useGetEvents(updateCounter, "events");
+    const [shownEvents, setShownEvents] = useState([]);
 
     const handleSearchChange = (e) => {
         if (e.target.value === "") {
-            setShownImages([]);
+            setShownEvents([]);
             return;
         }
-        let newShownImages = images.filter((image) =>
-            image.fields[0].value
-                .toLowerCase()
+        let newShownCurrentEvents = currentEvents.filter((event) =>
+            event
+                .data()
+                .fields[0].value.toLowerCase()
                 .includes(e.target.value.toLowerCase())
         );
-        setShownImages(newShownImages);
+        let newShownPastEvents = pastEvents.filter((event) =>
+            event
+                .data()
+                .fields[0].value.toLowerCase()
+                .includes(e.target.value.toLowerCase())
+        );
+        let newShownEvents = newShownCurrentEvents.concat(newShownPastEvents);
+        setShownEvents(newShownEvents);
     };
 
     return (
@@ -41,21 +49,21 @@ const FirestoreListing = ({ folder, updateCounter, setUpdateCounter }) => {
                 />
             </Box>
             <br />
-            {shownImages &&
-                shownImages.length > 0 &&
-                shownImages.map((image, index) => {
+            {shownEvents &&
+                shownEvents.length > 0 &&
+                shownEvents.map((event, index) => {
                     return (
-                        <FirestoreListingItem
+                        <FirestoreEventsListingItem
                             folder={folder}
                             key={index}
-                            image={image}
+                            event={event}
                             updateCounter={updateCounter}
                             setUpdateCounter={setUpdateCounter}
-                            setShownImages={setShownImages}
+                            setShownEvents={setShownEvents}
                         />
                     );
                 })}
-            {shownImages && shownImages.length === 0 && (
+            {shownEvents && shownEvents.length === 0 && (
                 <Typography>Nothing to show.</Typography>
             )}
         </Box>

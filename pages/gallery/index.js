@@ -1,32 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import PageLayout from "../../components/layout/PageLayout";
 import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import Gallery from "../../components/gallery/Gallery";
 import { db } from "../../firebase";
+import useGetImages from "../../hooks/useGetImages";
 
-const Projects = ({ images }) => {
+const Projects = () => {
+    const [updateCounter, setUpdateCounter] = useState(0);
+    const [images] = useGetImages(updateCounter, "gallery");
     return (
         <PageLayout name="GALLERY">
-            {images && <Gallery images={images} category="gallery" />}
+            {images && <Gallery images={images} />}
         </PageLayout>
     );
-};
-
-export const getServerSideProps = async (context) => {
-    const imagesRef = collection(db, "gallery");
-    const q1 = query(imagesRef, orderBy("dateUploaded", "desc"));
-
-    const queriedDocuments = await getDocs(q1);
-    let images = [];
-    queriedDocuments.docs.forEach((doc, index) => {
-        images = [...images, doc.data()];
-    });
-
-    return {
-        props: {
-            images,
-        },
-    };
 };
 
 export default Projects;

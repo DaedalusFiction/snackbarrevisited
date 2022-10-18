@@ -55,9 +55,9 @@ const variation1 = (images) => {
                         flexDirection: "column",
                     }}
                 >
-                    <SizedImage image={images[3]} width="100%" height="10rem" />
+                    <SizedImage image={images[4]} width="100%" height="10rem" />
                     <SizedImage
-                        image={images[3]}
+                        image={images[5]}
                         width="10rem"
                         height="16rem"
                     />

@@ -10,12 +10,14 @@ import theme from "../../styles/themes/theme";
 
 const FirestoreListingItem = ({
     folder,
-    image,
+    event,
     updateCounter,
     setUpdateCounter,
-    setShownImages,
+    setShownEvents,
 }) => {
-    const [formData, setFormData] = useState(JSON.parse(JSON.stringify(image)));
+    const [formData, setFormData] = useState(
+        JSON.parse(JSON.stringify(event.data()))
+    );
     const [isUpdating, setIsUpdating] = useState(false);
     const [isExpanded, setIsExpanded] = useState(false);
 
@@ -29,19 +31,20 @@ const FirestoreListingItem = ({
 
     const handleDelete = async () => {
         setIsUpdating(true);
-        let urls = image.URLs;
+        let urls = event.data().URLs;
         urls.forEach((url) => {
             deleteObject(ref(storage, url));
         });
-        await deleteDoc(doc(db, folder, image.id));
+        await deleteDoc(doc(db, folder, event.id));
         setUpdateCounter(updateCounter + 1);
-        setShownImages([]);
+        setShownEvents([]);
         setIsUpdating(false);
     };
 
     const handleUpdate = async () => {
         setIsUpdating(true);
-        const docRef = doc(db, folder, image.id);
+        console.log(event.data());
+        const docRef = doc(db, folder, event.id);
         await setDoc(docRef, formData).then(() => {
             setIsExpanded(false);
             setIsUpdating(false);
@@ -72,7 +75,7 @@ const FirestoreListingItem = ({
                     }}
                     onClick={handleExpand}
                 >
-                    <Typography>{image.fields[0].value}</Typography>
+                    <Typography>{event.data().fields[0].value}</Typography>
                     <ExpandMoreIcon />
                 </Box>
             ) : (
@@ -86,7 +89,7 @@ const FirestoreListingItem = ({
                         gap: ".5em",
                     }}
                 >
-                    {image &&
+                    {event &&
                         formData.fields.map((field, index) => {
                             return (
                                 <TextField

@@ -16,13 +16,13 @@ function useGetImages(updateCounter, folder) {
             const docsSnap = await getDocs(q);
             let newImages = [];
             docsSnap.docs.forEach((doc, index) => {
-                newImages = [...newImages, doc];
+                newImages = [...newImages, doc.data()];
             });
             setImages(newImages);
         }
 
         getImages();
-    }, [updateCounter, folder]);
+    }, [folder, updateCounter]);
     return [images];
 }
 

@@ -60,19 +60,19 @@ const heroContent = {
 
 const homeGalleryContent = {
     images: [
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
     ],
 };
 
@@ -82,7 +82,7 @@ const servicesContent = [
         price: "$200",
         description:
             "This is the sample description for the service. It is a very good description and a very good service",
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        image: { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
         button: { text: "Book Now!", href: "/contact" },
         features: [
             {
@@ -104,7 +104,7 @@ const servicesContent = [
         price: "$400-800",
         description:
             "This is the sample description for the service. It is a very good description and a very good service",
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        image: { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
         button: { text: "Book Now!", href: "/contact" },
         features: [
             {
@@ -130,7 +130,7 @@ const servicesContent = [
         price: "Custom",
         description:
             "This is the sample description for the service. It is a very good description and a very good service",
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        image: { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
         button: { text: "Book Now!", href: "/contact" },
         features: [
             {
@@ -188,12 +188,12 @@ const mosaicSectionContentOne = {
         variant: "contained",
     },
     images: [
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        { url: "/images/snackbar3.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar4.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar5.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar6.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar7.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar8.webp", alt: "alt snackbar2 text" },
     ],
 };
 const mosaicSectionContentTwo = {
@@ -207,12 +207,12 @@ const mosaicSectionContentTwo = {
         variant: "contained",
     },
     images: [
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
     ],
 };
 const mosaicSectionContentThree = {
@@ -226,12 +226,12 @@ const mosaicSectionContentThree = {
         variant: "contained",
     },
     images: [
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
     ],
 };
 const musicPreviewContent = {
@@ -250,12 +250,12 @@ const musicPreviewContent = {
         variant: "contained",
     },
     images: [
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        { url: "/images/snackbar3.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar4.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar5.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar6.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar7.webp", alt: "alt snackbar2 text" },
+        { url: "/images/snackbar8.webp", alt: "alt snackbar2 text" },
     ],
 };
 
@@ -270,7 +270,7 @@ const blockPhotoContentOne = {
     },
     image: {
         url: "/images/snackbarhero.webp",
-        alt: "Michael hoberman speaking with two novelists",
+        alt: "SNACKBAR rocking out",
     },
 };
 const blockPhotoContentTwo = {
@@ -282,13 +282,13 @@ const blockPhotoContentTwo = {
         href: "/about",
         variant: "contained",
     },
-    image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+    image: { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
 };
 
 const showcaseContentOne = {
     title: "Cool Album Title",
     subTitle: "Coming Soon:",
-    image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+    image: { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
     quote: "This can be some flavor text, like a line from one of your songs",
     description:
         "This is the showcase description. This is where you can talk about what you're showcasing and tell people why they should be interested.",
@@ -307,14 +307,14 @@ const musicContent = {
 };
 
 const eventsPreviewContent = {
-    image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+    image: { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
     bigDividerImage: {
         url: "/images/decorativeBorder2.svg",
-        alt: "alt placeholder text",
+        alt: "alt snackbar2 text",
     },
     dividerImage: {
         url: "/images/eventsBorder2.svg",
-        alt: "alt placeholder text",
+        alt: "alt snackbar2 text",
     },
     title: "Upcoming Events",
     buttons: [{ variant: "contained", href: "/shows", text: "All Shows" }],
@@ -328,21 +328,21 @@ const galleryStylesCategories = [
         name: "Black and White",
         href: "/gallery/styles/black%20and%20white",
         image: {
-            url: "/images/placeholder.webp",
+            url: "/images/snackbar2.webp",
             alt: "alt gallery image text",
         },
     },
     {
         name: "Mixed Media",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
+        image: { url: "/images/snackbar2.webp", alt: "alt text" },
     },
     {
         name: "Acrylic",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
+        image: { url: "/images/snackbar2.webp", alt: "alt text" },
     },
     {
         name: "Watercolor",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
+        image: { url: "/images/snackbar2.webp", alt: "alt text" },
     },
 ];
 
@@ -351,7 +351,7 @@ const galleryCategories = [
         name: "fiction",
         href: "/publications/fiction",
         image: {
-            url: "/images/placeholder.webp",
+            url: "/images/snackbar2.webp",
             alt: "alt gallery image text",
         },
         subCategories: [
@@ -359,47 +359,47 @@ const galleryCategories = [
                 name: "short story",
                 href: "/publications/fiction/shortstories",
                 image: {
-                    url: "/images/placeholder.webp",
+                    url: "/images/snackbar2.webp",
                     alt: "alt gallery image text",
                 },
             },
             {
                 name: "flash fiction",
                 href: "/publications/fiction/flash",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
+                image: { url: "/images/snackbar2.webp", alt: "alt text" },
             },
             {
                 name: "novella",
                 href: "/publications/fiction/novellas",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
+                image: { url: "/images/snackbar2.webp", alt: "alt text" },
             },
         ],
     },
     {
         name: "poetry",
         href: "/publications/poetry",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
+        image: { url: "/images/snackbar2.webp", alt: "alt text" },
         subCategories: [],
     },
     {
         name: "article",
         href: "/publications/articles",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
+        image: { url: "/images/snackbar2.webp", alt: "alt text" },
         subCategories: [
             {
                 name: "editorial",
                 href: "/publications/articles/editorials",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
+                image: { url: "/images/snackbar2.webp", alt: "alt text" },
             },
             {
                 name: "letter",
                 href: "/publications/articles/letters",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
+                image: { url: "/images/snackbar2.webp", alt: "alt text" },
             },
             {
                 name: "opinion",
                 href: "/publications/articles/letters",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
+                image: { url: "/images/snackbar2.webp", alt: "alt text" },
             },
         ],
     },
@@ -432,7 +432,7 @@ const contactConfig = {
 
 const aboutContent = {
     image: {
-        url: "/images/about1.webp",
+        url: "/images/snackbar1.webp",
         alt: "Moses Striking the Rock, by Joachim Anthonisz Wetwael",
     },
     name: "Good times, great music",
@@ -449,7 +449,7 @@ const aboutContent = {
 
 const leadProfile = {
     image: {
-        url: "/images/profile1.webp",
+        url: "/images/snackbar3.webp",
         alt: "Self-Portrait, by Henri Fantin-Latour",
     },
     name: "David Sorensen",
@@ -459,19 +459,19 @@ const leadProfile = {
 
 const secondaryProfiles = [
     {
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        image: { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
         name: "Designer One",
         content:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit.\n\nQuibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.\n\nLaboriosam voluptatem laudantium sequi iste nihil cupiditate sed, corporis eum natus excepturi, inventore nulla unde! Veritatis nihil culpa neque.",
     },
     {
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        image: { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
         name: "Designer Two",
         content:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.\n\nLaboriosam voluptatem laudantium sequi iste nihil cupiditate sed, corporis eum natus excepturi, inventore nulla unde! Veritatis nihil culpa neque. Dolore ipsa sed asperiores voluptatibus nam modi. Dolorem hic incidunt quae tenetur quaerat animi, unde aspernatur.",
     },
     {
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        image: { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
         name: "Designer Three",
         content:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.\n\nLaboriosam voluptatem laudantium sequi iste nihil cupiditate sed, corporis eum natus excepturi, inventore nulla unde! Veritatis nihil culpa neque. Dolore ipsa sed asperiores voluptatibus nam modi. Dolorem hic incidunt quae tenetur quaerat animi, unde aspernatur.\n\nDolore ipsa sed asperiores voluptatibus nam modi.",
@@ -485,10 +485,10 @@ const studioContent = {
         url: "/images/missionStatement.webp",
         alt: "Venus Adorned by the Graces, by Annibale Carracci",
     },
-    imageTwo: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+    imageTwo: { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
     imageThree: {
-        url: "/images/placeholder.webp",
-        alt: "alt placeholder text",
+        url: "/images/snackbar2.webp",
+        alt: "alt snackbar2 text",
     },
     header: "This is what we believe",
     content:
@@ -498,11 +498,11 @@ const studioContent = {
 // 7c. Work
 
 const workContent = {
-    imageOne: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-    imageTwo: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+    imageOne: { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
+    imageTwo: { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
     imageThree: {
-        url: "/images/placeholder.webp",
-        alt: "alt placeholder text",
+        url: "/images/snackbar2.webp",
+        alt: "alt snackbar2 text",
     },
     header: "Work Header",
     content:
@@ -520,7 +520,7 @@ const processSteps = [
         name: "STEP ONE",
         content:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.",
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        image: { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
         reverse: false,
     },
     {
@@ -528,7 +528,7 @@ const processSteps = [
         name: "STEP TWO",
         content:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.\n\nLaboriosam voluptatem laudantium sequi iste nihil cupiditate sed, corporis eum natus excepturi, inventore nulla unde! Veritatis nihil culpa neque. Dolore ipsa sed asperiores voluptatibus nam modi. Dolorem hic incidunt quae tenetur quaerat animi, unde aspernatur.",
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        image: { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
         reverse: true,
     },
     {
@@ -536,7 +536,7 @@ const processSteps = [
         name: "STEP THREE",
         content:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.\n\nLaboriosam voluptatem laudantium sequi iste nihil cupiditate sed, corporis eum natus excepturi, inventore nulla unde! Veritatis nihil culpa neque. Dolore ipsa sed asperiores voluptatibus nam modi. Dolorem hic incidunt quae tenetur quaerat animi, unde aspernatur.\n\nDolore ipsa sed asperiores voluptatibus nam modi.",
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        image: { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
         reverse: false,
     },
     {
@@ -544,7 +544,7 @@ const processSteps = [
         name: "STEP FOUR",
         content:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.",
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
+        image: { url: "/images/snackbar2.webp", alt: "alt snackbar2 text" },
         reverse: true,
     },
 ];
@@ -663,7 +663,7 @@ const books = [
             text: "view listing",
         },
 
-        image: { url: "/images/hundred.webp", alt: "alt placeholder text" },
+        image: { url: "/images/hundred.webp", alt: "alt snackbar2 text" },
     },
     {
         title: "Book Two",
@@ -677,7 +677,7 @@ const books = [
             color: "secondary",
             text: "view listing",
         },
-        image: { url: "/images/israel.webp", alt: "alt placeholder text" },
+        image: { url: "/images/israel.webp", alt: "alt snackbar2 text" },
     },
     {
         title: "Book Three",
@@ -691,7 +691,7 @@ const books = [
             color: "secondary",
             text: "view listing",
         },
-        image: { url: "/images/strange.webp", alt: "alt placeholder text" },
+        image: { url: "/images/strange.webp", alt: "alt snackbar2 text" },
     },
 ];
 
@@ -706,7 +706,7 @@ const articles = [
 const publicationsContent = {
     title: "Books and Articles by Your Name",
     body: "This is the body of the page. It can be as long or as short as you like",
-    image: { url: "/images/strange.webp", alt: "alt placeholder text" },
+    image: { url: "/images/strange.webp", alt: "alt snackbar2 text" },
 };
 
 export {

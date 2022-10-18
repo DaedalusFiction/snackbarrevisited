@@ -6,8 +6,10 @@ import Event from "../Events/Event";
 import NativeImage from "../../components/general/NativeImage";
 import { eventsPreviewContent } from "../../siteInfo";
 import DecorativeHeader from "../general/DecorativeHeader";
+import useGetEvents from "../../hooks/useGetEvents";
 
-const EventsPreview = ({ events }) => {
+const EventsPreview = () => {
+    const [currentEvents] = useGetEvents("events");
     return (
         <Box
             className="section"
@@ -28,15 +30,17 @@ const EventsPreview = ({ events }) => {
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={7}>
-                        {events.map((event, index) => {
-                            return (
-                                <Event
-                                    key={index}
-                                    fields={event.fields}
-                                    isPreview
-                                />
-                            );
-                        })}
+                        {currentEvents &&
+                            currentEvents.length > 0 &&
+                            currentEvents.map((event, index) => {
+                                return (
+                                    <Event
+                                        key={index}
+                                        fields={event.data().fields}
+                                        isPreview
+                                    />
+                                );
+                            })}
                     </Grid>
                 </Grid>
             </Container>

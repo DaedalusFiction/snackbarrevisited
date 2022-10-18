@@ -21,8 +21,7 @@ const Navbar = () => {
     const router = useRouter();
     const currentPage = router.pathname.split("/")[1];
     const path = router.pathname.split("/");
-
-    const [trigger, setTrigger] = useState(false);
+    const [trigger, setTrigger] = useState(true);
 
     useEffect(() => {
         const threshold = 30;
@@ -36,7 +35,7 @@ const Navbar = () => {
                 ticking = false;
                 return;
             }
-            setTrigger(scrollY > lastScrollY ? false : true);
+            setTrigger(scrollY > lastScrollY ? true : false);
             setTitleFontSize(scrollY < lastScrollY ? "2.75rem" : "1.75rem");
             lastScrollY = scrollY > 0 ? scrollY : 0;
             ticking = false;

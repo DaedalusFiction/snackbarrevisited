@@ -18,7 +18,7 @@ import EventsPreview from "../components/home/EventsPreview";
 import BlockPhoto from "../components/general/BlockPhoto";
 import MusicPreview from "../components/home/MusicPreview";
 
-export default function Home({ events }) {
+export default function Home() {
     return (
         <Box>
             <Meta />
@@ -28,7 +28,7 @@ export default function Home({ events }) {
                     musicPreviewContent={musicPreviewContent}
                     variation={1}
                 />
-                {events && <EventsPreview events={events} />}
+                <EventsPreview />
                 <AboutPreview />
                 <BlockPhoto blockPhotoContent={blockPhotoContentOne} />
             </Container>
