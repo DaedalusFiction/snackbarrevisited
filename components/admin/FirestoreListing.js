@@ -3,12 +3,7 @@ import React, { useState } from "react";
 import useGetImages from "../../hooks/useGetImages";
 import FirestoreListingItem from "./FirestoreListingItem";
 
-const FirestoreListing = ({
-    folder,
-    config,
-    updateCounter,
-    setUpdateCounter,
-}) => {
+const FirestoreListing = ({ folder, updateCounter, setUpdateCounter }) => {
     const [images] = useGetImages(updateCounter, folder);
     const [shownImages, setShownImages] = useState([]);
 

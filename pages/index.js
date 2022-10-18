@@ -18,10 +18,10 @@ import EventsPreview from "../components/home/EventsPreview";
 import BlockPhoto from "../components/general/BlockPhoto";
 import MusicPreview from "../components/home/MusicPreview";
 
-export default function Home({ events }) {
+export default function Home() {
     return (
         <Box>
-            <Meta />
+            {/* <Meta />
             <Hero />
             <Container maxWidth="xl" disableGutters>
                 <MusicPreview
@@ -31,31 +31,31 @@ export default function Home({ events }) {
                 {events && <EventsPreview events={events} />}
                 <AboutPreview />
                 <BlockPhoto blockPhotoContent={blockPhotoContentOne} />
-            </Container>
+            </Container> */}
         </Box>
     );
 }
 
-export const getServerSideProps = async (context) => {
-    const today = new Date().toJSON().slice(0, 10);
+// export const getServerSideProps = async (context) => {
+//     const today = new Date().toJSON().slice(0, 10);
 
-    const eventsRef = collection(db, "events");
-    const q1 = query(
-        eventsRef,
-        orderBy("startDate", "asc"),
-        where("startDate", ">=", today),
-        limit(3)
-    );
+//     const eventsRef = collection(db, "events");
+//     const q1 = query(
+//         eventsRef,
+//         orderBy("startDate", "asc"),
+//         where("startDate", ">=", today),
+//         limit(3)
+//     );
 
-    const queriedDocuments = await getDocs(q1);
-    let events = [];
-    queriedDocuments.docs.forEach((doc, index) => {
-        events = [...events, doc.data()];
-    });
+//     const queriedDocuments = await getDocs(q1);
+//     let events = [];
+//     queriedDocuments.docs.forEach((doc, index) => {
+//         events = [...events, doc.data()];
+//     });
 
-    return {
-        props: {
-            events,
-        },
-    };
-};
+//     return {
+//         props: {
+//             events,
+//         },
+//     };
+// };

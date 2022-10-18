@@ -7,7 +7,6 @@ import {
     query,
     where,
 } from "firebase/firestore";
-import React from "react";
 import EventsItems from "../../components/Events/EventsItems";
 import PageLayout from "../../components/layout/PageLayout";
 import { db } from "../../firebase";
