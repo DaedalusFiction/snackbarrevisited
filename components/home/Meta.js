@@ -15,9 +15,12 @@ const Meta = () => {
                 )}
                 <meta
                     name="keywords"
-                    content="literature, literary, stories, story, poetry, poems, poem, magazine, fiction, non-fiction, journal"
+                    content="music, grunge, pop, alternative, live music, concert, gig, guitar, rock, band, group, show"
                 />
-                <meta name="description" content="Literary Magazine"></meta>
+                <meta
+                    name="description"
+                    content="Basement Pop Cover Band"
+                ></meta>
             </Head>
         </div>
     );
