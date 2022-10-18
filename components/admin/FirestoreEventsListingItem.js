@@ -31,10 +31,6 @@ const FirestoreListingItem = ({
 
     const handleDelete = async () => {
         setIsUpdating(true);
-        let urls = event.data().URLs;
-        urls.forEach((url) => {
-            deleteObject(ref(storage, url));
-        });
         await deleteDoc(doc(db, folder, event.id));
         setUpdateCounter(updateCounter + 1);
         setShownEvents([]);

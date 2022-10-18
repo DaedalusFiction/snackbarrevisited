@@ -433,7 +433,7 @@ const contactConfig = {
 const aboutContent = {
     image: {
         url: "/images/snackbar1.webp",
-        alt: "Moses Striking the Rock, by Joachim Anthonisz Wetwael",
+        alt: "Greg and Emily",
     },
     name: "Good times, great music",
     buttons: [
